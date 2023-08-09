@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;700&display=swap');
+
+:root{
+    --clr-gray: #ededec5d;
+    --clr-back: #fff;
+    --clr-reaction: #9b191910;
+    --clr-reaction-hover: #ff000027;
+    --clr-memory: #88861917;
+    --clr-memory-hover: #fffb0028;
+    --clr-verbal: #199b5e10;
+    --clr-verbal-hover: #1eff0028;
+    --clr-visual: #67199b10;
+    --clr-visual-hover: #0000ff36;
+}
+
+/* seteando todos los valores del documento */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+}
+
+/* aplicando  color de fondo al body */
+body{
+    background-color: var(--clr-back);
+}
+
+/* widget-wrapper ==> es el contenedor padre */
+.widget-wrapper{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+/* widget-wrapper ==> contendra el widget-results y el widget-actions */
+.widget-container{
+    width: 50%;
+    background-color: var(--clr-back);
+    border-radius: 2.5em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, .2);
+}
+
+/* widget-results ===> contiene el widget-results */
+.widget-results{
+    background-image: linear-gradient(to bottom, #6b4eeb, #3d2ee2);
+    border-radius: 2.5em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.widget-results:hover{
+    background-image: linear-gradient(to bottom, #433386, #4839f1);
+}
+
+.widget-p-result{
+    font-size: 1.4em;
+    color: var(--clr-gray);
+}
+
+.widget-counter{
+    background-image: linear-gradient(to bottom, #1312123b, #11111100);
+    border-radius: 5em;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.widget-count-number{
+    font-size: 4em;
+    color: #f1f1ff;
+}
+
+.widget-count-of{
+    color: var(--clr-gray);
+}
+
+.widget-great{
+    font-size: 1.8em;
+    color: #f1f1ff;
+
+}
+
+.widget-you{
+    font-size: 1em;
+    color: var(--clr-gray);
+}
+
+/* widget-results ===> contiene el widget-actions */
+.widget-actions{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}
+
+.widget-title{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.widget-card{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: .5em;
+}
+
+.widget-name{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.name-reaction{
+    color: #e7494c;
+}
+
+.name-memory{
+    color: #ebc621;
+}
+
+.name-verbal{
+    color: #54e26c;
+}
+
+.name-visual{
+    color: #6b49e7;
+}
+
+.reaction{
+    background-color: var(--clr-reaction); 
+}
+
+.reaction:hover{
+    background-color: var(--clr-reaction-hover);    
+}
+
+.memory{
+    background-color: var(--clr-memory);    
+}
+
+.memory:hover{        
+    background-color: var(--clr-memory-hover);    
+}
+
+.verbal{
+    background-color: var(--clr-verbal);
+}
+
+.verbal:hover{
+    background-color: var(--clr-verbal-hover);
+}
+
+.visual{
+    background-color: var(--clr-visual);
+}
+
+.visual:hover{
+    background-color: var(--clr-visual-hover);
+}
+
+
+.widjet-card-btn{
+    padding: .5em;
+    background-color:#000000;
+    color: #ffffff;
+    font-size: 1em;
+    border-radius: 100vh;
+    border: 2px solid #000000;
+}
+
+.widjet-card-btn:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+/* medias queries */
+@media screen and (min-width:1000px) {
+    .widget-container{
+        flex-direction: row;
+        width: 35%;
+    }
+
+    .widget-results{
+        flex:  1;
+        padding: 3em 2em;
+    }
+
+    .widget-you{
+        text-align: center;
+    }
+
+    .widgets-actions{
+        flex: 1;
+        padding: 3em 2em;
+    }
+
+}
