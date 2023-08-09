@@ -170,7 +170,7 @@ body{
 
 
 .widjet-card-btn{
-    padding: .5em;
+    padding: .8em;
     background-color:#000000;
     color: #ffffff;
     font-size: 1em;
@@ -185,7 +185,7 @@ body{
 }
 
 /* medias queries */
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1350px) {
     .widget-container{
         flex-direction: row;
         width: 35%;
@@ -200,7 +200,7 @@ body{
         text-align: center;
     }
 
-    .widgets-actions{
+    .widget-actions{
         flex: 1;
         padding: 3em 2em;
     }
